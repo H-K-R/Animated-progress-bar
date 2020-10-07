@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Animated Progress bar</title>
+</head>
+
+<body>
+	<div class="skill-bar">
+
+		<h3>Html</h3>
+		<div id="bar1" class="barfiller">
+			<span class="tip"></span>
+			<span class="fill" data-percentage="90"></span>
+		</div>
+
+		<h3>Css</h3>
+		<div id="bar2" class="barfiller">
+			<span class="tip"></span>
+			<span class="fill" data-percentage="60"></span>
+		</div>
+
+		<h3>JavaScript</h3>
+		<div id="bar3" class="barfiller">
+			<span class="tip"></span>
+			<span class="fill" data-percentage="75"></span>
+		</div>
+
+		<h3>ReactJs</h3>
+		<div id="bar4" class="barfiller">
+			<span class="tip"></span>
+			<span class="fill" data-percentage="65"></span>
+		</div>
+
+
+		<h3>Php</h3>
+		<div id="bar5" class="barfiller">
+			<span class="tip"></span>
+			<span class="fill" data-percentage="85"></span>
+		</div>
+
+
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="jquery.barfiller.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+			$('#bar1').barfiller({ barColor: "#00FF00", duration: 1000 });
+			$('#bar2').barfiller({ barColor: "#FF0000", duration: 1000 });
+			$('#bar3').barfiller({ barColor: "#0000FF", duration: 1000 });
+			$('#bar4').barfiller({ barColor: "#00FFFF", duration: 1000 });
+			$('#bar5').barfiller({ barColor: "#008000", duration: 1000 });
+		});
+
+	</script>
+</body>
+
+</html>
